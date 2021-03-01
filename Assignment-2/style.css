@@ -1,0 +1,46 @@
+nav{
+    background-color: gray;
+    height: 60px;
+    text-align: center;
+    padding: 5%;
+}
+body{
+    background-color: #072f61;
+}
+#heading{
+    background-color: rgb(241, 85, 207);
+    margin-left: 30px;
+    width: 80%;
+    border: 5px solid black;
+    position: sticky;
+    top: 60px;
+}
+
+#numbersList{
+    border: 5px solid black;
+}
+
+main{
+
+    margin-top: 60px;
+}
+
+li:hover{
+    background-color: gray;
+    border: black;
+    font-size: larger;
+
+}
+
+li{
+    color: white;
+}
+
+footer{
+    background-color: gray;
+    height: 30px;
+}
+footer h2{
+
+    text-align: center;
+}
