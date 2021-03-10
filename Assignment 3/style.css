@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url(https://images.unsplash.com/photo-1615224571979-b9271f79998b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);
+}
+
+div{
+
+    border: 2px solid #045b6d;
+    height: 70px;
+    width: 190px;
+    margin: 300px auto;
+    transition: all 1s;
+    box-shadow: 0px 10px 10px -2px rgb(4, 82, 105);
+
+}
+
+div p{
+
+    text-align: center;
+    padding: 20px 10px;
+    transition: all 1s;
+    color:red;
+
+
+}
+
+div:hover{
+
+    transform: scale(3);
+    box-shadow:0px 10px 10px -2px #05829b;
+
+} 
+
+div:hover p{
+
+    font-weight: 900;
+
+}
