@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: #5686df;
+    font-size: 1.8rem;
+    min-height: 60px;
+    width: 100vw;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+}
+a{
+    text-decoration: none;
+    color: rgb(246, 252, 251);
+    padding: 3rem;
+}
+li{
+    margin:2px solid black;
+}
+
+ul{
+   min-height: 50px;
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   width: 100vw;
+   
+ }
+
+
+
+@media screen and (max-width:200px)
+{
+    ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.Category{
+    width: 90vw;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 10px;
+}
+
+article figure{
+    width: 300px;
+}
+
+article figure img{
+    width: 100%;
+    height: 100%;
+}
+
+article button{
+    padding: 5px 25px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+article{
+    transition: all 0.2s;
+    box-shadow: 0px 2px 3px rgb(212, 226, 241);
+}
+
+article:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+
+#slider{
+    width: 90vw;
+    background-color: rgb(167, 210, 240);
+    margin: auto;
+    max-height: 700px;
+    overflow: hidden;
+}
+
+#slider figure{
+    display: flex;
+    flex-wrap: nowrap;
+    width:50px;
+    animation: slide 5s infinite;
+    animation-direction: reverse;
+    justify-content: space-evenly;
+  
+}
+
+#slider img{
+    width: 60vw;
+    height: auto;
+}
+
+@keyframes slide{
+   0%{
+       transform: translateX(100px);
+   }
+   100%{
+    transform: translateX(900px);
+}
+
+}
+
+#bottom{
+    color: white;
+    background-color: #593fec;
+    font-family: sans-serif;
+    
+}
+
+
+.Category{
+    display: flex;
+    flex-wrap: wrap;
+	justify-content: center;
+    align-items: stretch;
+	padding:50px;
+}
+.Category {
+    flex: 0 0 200px;
+    margin: 10px 10px 20px 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 4px 0px  rgba(169, 201, 226, 0.3);
+	max-height: 420px;
+} 
+.Category img {
+    max-height: 150px;
+}
+
+.Category .text > button {
+    background: #5831e6;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+	font-weight:bold;
+	border-radius: 25px;
+	transition: all 0.5s;
+}
+.Category .text > button:hover {
+    background: #8c8de7;
+    color: #523dce;
+	font-weight: bold;
+	font-size:0.9rem;
+}
