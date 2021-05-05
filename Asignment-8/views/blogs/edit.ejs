@@ -1,0 +1,22 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+
+<form class="needs-validation container mt-5" action="/blogs/<%=blog._id%>?_method=PATCH" method="POST" novalidate>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Author</label>
+        <input type="text" class="form-control mb-3" id="exampleFormControlInput1" name="author" value="<%=blog.author%>">
+        <label for="exampleFormControlInput1" class="form-label">Title</label>
+        <input type="text" class="form-control mb-3" id="exampleFormControlInput1" name="title" value="<%=blog.title%>">
+        <label for="exampleFormControlInput1" class="form-label">Image</label>
+        <input type="text" class="form-control mb-3" id="exampleFormControlInput1" name="image"value="<%=blog.image%>">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Content</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="18" name="content"><%=blog.content%></textarea>
+    </div>
+    <button class="btn btn-primary">Submit</button>
+</form>
+
+<%- include('../partials/formValidator')%>          
+<%- include('../partials/footer')%>
+

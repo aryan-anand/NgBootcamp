@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;   
+}
+
+p{
+    margin-top: 2rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+
+
+.navbar{
+    background-color: #38d3e7;
+    color: white;
+}
+
+.card-header{
+    color: #38d3e7
+}
+
+.btn{
+    outline: none;
+}
+
+.btn-outline-info{
+    border: 2px solid white;
+    color: white;
+
+}
+
+.indexCard:hover{
+    transform: translateY(-2px);
+    box-shadow:10px 10px #a8dadc;
+}
+
+.newsLetter{
+    text-align: center;
+    background-color: #38d3e7;
+    color: white;
+    line-height: 2.5;
+    margin-top: 2rem;
+}
+
+.footer{
+
+    margin-top: 0;
+    background-color: #38d3e7;
+    text-align: center;
+    line-height: 2;
+    margin-top: auto;
+}
+
+.footerIcons{
+    color: white;
+}
+
+
+
+.landingImage{
+    height: 100%;
+    width: 100%;
+    animation-name: none;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.landingPanel{  
+    width: 99.8vw;
+    background-color: #38d3e7;
+    text-align: center;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.landingPanel h1{
+    font-size: 4rem;
+    line-height: 2;
+    text-shadow: 5px 5px #38d3e7;
+}
+
+.landingText{
+    margin-top: 15rem;
+}
+
+.featuresTab{
+    margin-top: 5rem;
+    text-align: center;
+    color: #38d3e7;
+    margin-bottom: 5rem;
+    line-break: 2;
+}
+
+.featuresTab .card{
+    border: none;
+    line-height: 2;
+}
+
+
+.featureImg{
+    width: 20rem;
+    height: 20rem;
+}
+
+
+
+.carousel-item{
+    width: 30rem;
+    margin-left: 40%;
+
+}
+
+.caroImg{
+    float: left;
+    margin-right: 2rem;
+}
+
+
+
+@media (max-width: 805px) { 
+    h1 {font-size: 1rem;} 
+    p {font-size:0.5rem;} /*1rem = 16px*/
+  }
+
+  @keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+/* index-img   class for index page */

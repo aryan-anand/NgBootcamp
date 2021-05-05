@@ -1,0 +1,54 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+
+<%- include('../partials/flash')%>
+<div class="container">
+    <figure class="text-center">
+        <blockquote class="blockquote">
+          <h1 class="display-2"><%=blog.title%></h1>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          <h6><%=blog.author%></h6>
+        </figcaption>
+      </figure>
+      <img src="<%=blog.image%>" class="rounded mx-auto d-block img-fluid" alt="...">
+      <p><%=blog.content%></p>
+      <a href="/blogs/<%=blog._id%>/edit" class="btn btn-success">Edit</a>
+      <br>
+      <br>
+
+      <form action="/blogs/<%=blog._id%>?_method=DELETE" method="POST">
+        <button class="btn btn-danger">Delete</button>
+      </form>
+</div>
+<br>
+<hr>
+<!-- Comment Section -->
+<div class="container">
+  <h1>Comment</h1>
+  <form class="needs-validation container mt-2" action="/blogs/<%=blog._id%>" method="POST" novalidate>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">User</label>
+        <input type="text" class="form-control mb-3" id="exampleFormControlInput1" name="user" required>
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Comment</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="comment" required></textarea>
+    </div>
+    <button class="btn">Submit</button>
+</form>
+</div>
+<div class="container mr-1">
+    <%for (let review of blog.reviews){%>
+      <div class="card w-75 mt-3 mb-3 mr-5">
+        <div class="card-body">
+          <h5 class="card-title"><%=review.user%></h5>
+          <p class="card-text"><%=review.comment%></p>
+        </div>
+      </div>
+    <%}%>
+  </div>
+
+</div>
+<%- include('../partials/formValidator')%>     
+<%- include('../partials/footer')%>
